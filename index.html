@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. John Smith - Researcher</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background-color: #f4f4f4; 
+        }
+        header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            padding: 1rem; 
+            border-radius: 10px; 
+            margin-bottom: 2rem;
+        }
+        .container { 
+            display: grid; 
+            grid-template-columns: 250px 1fr; 
+            gap: 2rem; 
+        }
+        .sidebar { 
+            background: white; 
+            padding: 1.5rem; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .main-content { 
+            background: white; 
+            padding: 2rem; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status-preprint { 
+            background: #ffeb3b; 
+            color: #f57c00; 
+            padding: 3px 8px; 
+            border-radius: 5px; 
+            font-size: 0.8em; 
+            font-weight: bold;
+        }
+        .status-accepted { 
+            background: #4caf50; 
+            color: white; 
+            padding: 3px 8px; 
+            border-radius: 5px; 
+            font-size: 0.8em; 
+            font-weight: bold;
+        }
+        .status-under-review { 
+            background: #ff9800; 
+            color: white; 
+            padding: 3px 8px; 
+            border-radius: 5px; 
+            font-size: 0.8em; 
+            font-weight: bold;
+        }
+        .paper { 
+            border: 1px solid #ddd; 
+            padding: 1rem; 
+            margin: 1rem 0; 
+            border-radius: 8px; 
+            transition: transform 0.2s;
+        }
+        .paper:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .paper-title { 
+            font-weight: bold; 
+            color: #2c3e50; 
+            font-size: 1.1em; 
+            margin-bottom: 0.5rem;
+        }
+        .paper-authors { 
+            color: #666; 
+            font-style: italic; 
+            margin-bottom: 0.5rem;
+        }
+        .paper-venue { 
+            color: #34495e; 
+            font-weight: 500;
+        }
+        .paper-links a { 
+            margin-right: 10px; 
+            text-decoration: none; 
+            color: #3498db; 
+        }
+        .paper-links a:hover { text-decoration: underline; }
+        .github-stats { 
+            display: flex; 
+            gap: 15px; 
+            margin-top: 10px; 
+            font-size: 0.9em; 
+            color: #666;
+        }
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        h2 { 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 0.5rem; 
+            color: #2c3e50; 
+        }
+        h3 { 
+            color: #34495e; 
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. John Smith</h1>
+        <p>AI Researcher & Machine Learning Engineer</p>
+        <p>johnsmith@example.com | example.com<br>
+        Office: Building 126, Office 428C</p>
+    </header>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-img">👤</div>
+            <h3>Quick Stats</h3>
+            <p><strong>Papers:</strong> 3</p>
+            <p><strong>Conference Talks:</strong> 1 Oral</p>
+            <p><strong>Open Source:</strong> 2 Repos</p>
+            <h3>Interests</h3>
+            <ul>
+                <li>Large Language Models</li>
+                <li>Machine Learning</li>
+                <li>AI Safety</li>
+                <li>Computer Vision</li>
+            </ul>
+            <h3>Social</h3>
+            <ul>
+                <li><a href="https://github.com/c4gnet">GitHub</a></li>
+                <li><a href="https://twitter.com/johnsmith_research">Twitter</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <h2>About Me</h2>
+            <p>I'm a PhD student in Computer Science at Stanford University, specializing in AI and Machine Learning. My research focuses on LLMs and their applications in multi-modal reasoning, context management, and automated text generation.</p>
+            
+            <h2>Publications</h2>
+            
+            <div class="paper">
+                <div class="paper-title">🎤 Oral Presentation: Lorem Ipsum for LLM Optimization: A Novel Approach</div>
+                <div class="paper-authors">John Smith, Jane Doe, Bob Wilson</div>
+                <div class="paper-venue">IACL 2026 • <span class="status-accepted">ACCEPTED</span></div>
+                <p>This paper explores a novel optimization technique for LLMs using Lorem Ipsum as a baseline for performance evaluation.</p>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2026.12345">ArXiv</a>
+                    <a href="https://github.com/c4gnet/lorem-ipsum-llm">Code</a>
+                    <a href="https://portland.sched.com/event/major/oral-123">🎤 Talk Info</a>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <div class="paper-title">🎤 Oral Presentation: Ipsum Lorem is all you need</div>
+                <div class="paper-authors">John Smith, Jane Doe, Kyle Tasker</div>
+                <div class="paper-venue">COML 2026 • <span class="status-accepted">ACCEPTED - ORAL PRESENTATION</span></div>
+                <p>This paper presents a novel approach to context management in LLMs, achieving top 1% acceptance rate (120/120 submissions selected for orals).</p>
+                <div class="paper-links">
+                    <a href="https://openreview.net/forum?id=example123">OpenReview</a>
+                    <a href="https://github.com/c4gnet/ipsum-lorem-all-you-need">Code</a>
+                    <a href="https://coml.cc/virtual/2026/calendar">Presentation Schedule</a>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <div class="paper-title">Optimizing Large Language Models for Contextual Reasoning in Multi-Task Environments</div>
+                <div class="paper-authors">John Smith, Collaborators</div>
+                <div class="paper-venue">COAI 2026 • <span class="status-accepted">ACCEPTED</span></div>
+                <p>Revolutionary techniques for optimizing LLMs in multi-task environments with context reasoning.</p>
+                <div class="paper-links">
+                    <a href="https://github.com/c4gnet/llm-multitask-optimization">Code</a>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <div class="paper-title">Advanced Text Generation Using Deep Learning</div>
+                <div class="paper-authors">John Smith, Lisa Zhang</div>
+                <div class="paper-venue">ACL 2025 • <span class="status-accepted">ACCEPTED</span></div>
+                <p>Deep learning approaches for advanced text generation tasks, published at ACL 2025.</p>
+                <div class="paper-links">
+                    <a href="https://github.com/c4gnet/text-generation-deep-learning">Code</a>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <div class="paper-title">Real-Time Image Captioning with Transformer Networks</div>
+                <div class="paper-authors">John Smith, Maria Garcia</div>
+                <div class="paper-venue">CVPR 2025 • <span class="status-under-review">UNDER REVIEW</span></div>
+                <p>Innovative transformer-based approach for real-time image captioning with superior performance metrics.</p>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2025.67890">ArXiv</a>
+                    <a href="https://github.com/c4gnet/image-captioning-transformer">Code</a>
+                </div>
+            </div>
+            
+            <h2>GitHub Repositories</h2>
+            
+            <div class="paper">
+                <div class="paper-title">🤖 Ipsum Lorem is all you need</div>
+                <div class="paper-authors">John Smith, Jane Doe, Kyle Tasker</div>
+                <div class="paper-venue">COML 2026 Accepted Paper</div>
+                <p>Repository with code for the COML 2026 accepted paper on LLM optimization.</p>
+                <div class="paper-links">
+                    <a href="https://github.com/c4gnet/ipsum-lorem-all-you-need">View Repository</a>
+                </div>
+                <div class="github-stats">
+                    <span>⭐ 45 stars</span>
+                    <span>🍴 12 forks</span>
+                    <span>📅 Last updated: 2026-06-28</span>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <div class="paper-title">🔥 Lorem Ipsum for LLM Optimization</div>
+                <div class="paper-authors">John Smith, Jane Doe, Bob Wilson</div>
+                <div class="paper-venue">IACL 2026 Accepted Paper</div>
+                <p>Implementation of the Lorem Ipsum LLM optimization technique.</p>
+                <div class="paper-links">
+                    <a href="https://github.com/c4gnet/lorem-ipsum-llm">View Repository</a>
+                </div>
+                <div class="github-stats">
+                    <span>⭐ 23 stars</span>
+                    <span>🍴 7 forks</span>
+                    <span>📅 Last updated: 2026-06-26</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
